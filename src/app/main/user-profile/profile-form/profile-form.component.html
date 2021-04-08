@@ -1,0 +1,27 @@
+<h1>Profile form</h1>
+<label>
+  customBgColor
+  <input type="color" [formControl]="customBgColor" />
+</label>
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" (reset)="onReset()">
+  <label>
+    name:
+    <input type="text" formControlName="name" required />
+  </label>
+
+  <label>
+    email:
+    <input type="email" formControlName="email" required email />
+  </label>
+
+  <label>
+    phone_number:
+    <input type="tel" formControlName="phone_number" />
+  </label>
+
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</form>
+
+<div *ngIf="successfulSubmit" class="success">Success!</div>

@@ -1,0 +1,15 @@
+<ng-container *ngIf="store.userData$ | async as userData">
+  <h1>Submitted data</h1>
+  <div class="group">
+    <div class="group__label">name:</div>
+    <div class="group__value">{{ userData.name }}</div>
+  </div>
+  <div class="group">
+    <div class="group__label">email:</div>
+    <div class="group__value">{{ userData.email }}</div>
+  </div>
+  <div class="group">
+    <div class="group__label">phone_number:</div>
+    <div class="group__value">{{ userData.phone_number }}</div>
+  </div>
+</ng-container>

@@ -1,0 +1,8 @@
+:host {
+  /* display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center; */
+  min-width: max-content;
+}

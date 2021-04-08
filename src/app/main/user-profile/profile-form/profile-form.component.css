@@ -1,0 +1,12 @@
+:host() {
+  display: block;
+}
+input.ng-invalid.ng-touched {
+  outline-color: red;
+  outline-style: solid;
+}
+
+.success {
+  background-color: limegreen;
+  text-align: center;
+}
